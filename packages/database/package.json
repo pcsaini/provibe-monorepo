@@ -1,0 +1,19 @@
+{
+  "name": "@provibe/db",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.4.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.4.2",
+    "typescript": "^5.2.2"
+  }
+}
