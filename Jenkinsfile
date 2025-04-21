@@ -36,14 +36,6 @@ pipeline {
     }
 
     stage('Build Projects') {
-      steps {
-        sh 'pnpm build --filter=@provibe/admin'
-        sh 'pnpm build --filter=@provibe/app'
-        sh 'pnpm build --filter=@provibe/web'
-      }
-    }
-
-    stage('Build Docker Images') {
      steps {
         sh 'docker compose up -d --build'
       }
